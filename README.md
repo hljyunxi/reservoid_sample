@@ -1,4 +1,5 @@
-reservoid_sample
-================
+蓄水池抽样实现程序
+=======
 
-reservoid  sampling implementation
+程序由下面几个部分组成：
+
