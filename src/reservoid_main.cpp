@@ -7,7 +7,7 @@
 using namespace std;
 
 //测试程序
-int main(){
+int main() {
     uint32_t total, ret_size;
     printf("enter total and ret_size\n");
     scanf("%u%u", &total, &ret_size);
