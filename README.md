@@ -3,9 +3,9 @@
 
 程序由下面几个部分组成：
 
-* random.h random.cpp
-* reservoid.h reservoid.cpp
-* reservoid_main.cpp
+* random部分(random.h, random.cpp)
+* reservoid部分(reservoid.h, reservoid.cpp)
+* 使用示例部分(reservoid_main.cpp)
 
 random部分
 =============================
@@ -15,19 +15,27 @@ random主要实现了随机数发生器(模范RS HASH算法),
 
 * next()
 
+```
 产生的随机数的范围是[0-UINT32_MAX]
+```
 
 * uniform(n)
 
+```
 产生的随机数的范围是[0, n-1]
+```
 
 * one_in(n)
 
+```
 true: 1/n概率  false: other
+```
 
 * range(n, m)
 
+```
 true: m/n概率  false: other
+```
 
 reservoid部分
 =============================
@@ -40,8 +48,7 @@ reservoid部分
   依此类推，将第I个员工以K/I的概率替换results_集合中的一个员工
 ```
 
-
-测试程序reservoid_main部分
+使用示例部分
 =============================
 
 
