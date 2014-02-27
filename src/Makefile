@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -g -Wall -fPIC
 
-OUTPUT := ../bin/lottery
+OUTPUT := ../bin/reservoid
 
 INCLUDE := ./ 
 
@@ -14,7 +14,7 @@ OBJS := $(patsubst %.cpp, %.o, $(SOURCE))
 
 all:$(OUTPUT)
 
-./bin/lottery: $(OBJS)
+../bin/reservoid: $(OBJS)
 	$(CC) $(CFLAGS) $(addprefix -I,$(INCLUDE)) -o $@ $^  
 
 clean:
